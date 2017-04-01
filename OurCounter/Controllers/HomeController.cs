@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using OurCounter.Models;
 
@@ -13,15 +11,22 @@ namespace OurCounter.Controllers
     {
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ViewResult Photo()
+        {
             var images = Directory.EnumerateFiles(Server.MapPath("~/Content/Images"))
-                              .Select(Path.GetFileName);
+                          .Select(Path.GetFileName);
 
             var imageModel = new ImageModel()
             {
                 Images = images
             };
+
             return View(imageModel);
         }
+
 
         [OutputCache(Duration = 6000, VaryByParam = "imageName")]
         public ActionResult GetImageFull(string imageName)
@@ -58,27 +63,12 @@ namespace OurCounter.Controllers
             }
             catch (Exception)
             {
-                
-                return new byte[]{};
+
+                return new byte[] { };
             }
             //convert to full size image
 
-            return new byte[] {};
-        }
-
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return new byte[] { };
         }
     }
 }
