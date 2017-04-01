@@ -274,6 +274,7 @@
     <Content Include="Scripts\ImageGallery\jquery.blueimp-gallery.js" />
     <Content Include="Scripts\ImageGallery\jquery.blueimp-gallery.min.js" />
     <Content Include="Scripts\ImageGallery\vendor\jquery.js" />
+    <None Include="Properties\PublishProfiles\ourcounter2 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\ourcounter2.pubxml" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />

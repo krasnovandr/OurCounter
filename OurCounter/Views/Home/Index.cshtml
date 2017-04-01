@@ -64,13 +64,34 @@
     </div>
     <div class="row" style="margin-top: 20px">
         <div class="col-md-6">
-            <input type="date" id="ourDate" />
-            <h3 id="resultDays"></h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">Смотрим день по дате</div>
+                <div class="panel-body">
+                    <p>
+                        <label for="ourDate">Выбираем дату</label>
+                        <input type="date" id="ourDate" />
+                    </p>
+                    <p>
+                        <label>День:</label>
+                        <span id="resultDays"></span>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            <label for="dayText">Наш денек:</label>
-            <input type="number" id="dayText" />
-            <input type="date" id="calculatedDate" />
+            <div class="panel panel-default">
+                <div class="panel-heading">Смотрим дату по дню</div>
+                <div class="panel-body">
+                    <p>
+                        <label for="dayText">Вводим день</label>
+                        <input type="number" id="dayText" />
+                    </p>
+                    <p>
+                        <label>Дата:</label>
+                        <input type="date" id="calculatedDate" />
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
