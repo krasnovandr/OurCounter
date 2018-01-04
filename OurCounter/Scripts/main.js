@@ -32,6 +32,7 @@ $(document).ready(function () {
         clockFace: 'DailyCounter',
         autoStart: false,
         language: 'russian',
+        
         callbacks: {
             stop: function () {
                 $('.distributionClockMessage').html('');
@@ -39,7 +40,7 @@ $(document).ready(function () {
         }
     });
 
-    distributionClock.setCountdown();
+    distributionClock.setCountdown(true);
     distributionClock.start();
 
     $("#ourDate").change(function () {
