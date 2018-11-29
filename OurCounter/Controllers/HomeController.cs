@@ -14,6 +14,11 @@ namespace OurCounter.Controllers
             return View();
         }
 
+        public ActionResult NewYear()
+        {
+            return View();
+        }
+
         public ViewResult Photo()
         {
             var images = Directory.EnumerateFiles(Server.MapPath("~/Content/Images"))
