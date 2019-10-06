@@ -25,7 +25,7 @@ $(document).ready(function () {
     mainClock.setCountdown();
     mainClock.start();
 
-    var distributionEndDate = new Date(2019, 7, 14, 20, 0, 0);
+    var distributionEndDate = new Date(2019, 10, 1, 20, 0, 0);
     var distributionDate = distributionEndDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
     var distributionClock = $('#distributionClock').FlipClock(distributionDate, {
